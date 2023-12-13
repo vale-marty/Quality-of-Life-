@@ -1,0 +1,393 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;1000&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+#body{
+    font-family: "Nunito", sans-serif;
+    background-color: #032030;
+}
+#banner{
+    padding-bottom: 4rem;
+}
+#banner-name{
+    font-weight: 1000;
+    font-size: 5rem;
+    color: #006da4;
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 0rem;
+}
+#instructions{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: white;
+    padding-bottom: 1.6rem
+}
+#input-box{
+    display: flex;
+    justify-content: center;
+}
+#search-bar{
+    height: 2.8rem;
+    width: 17rem;
+    font-size: 1.1rem;
+}
+#search-btn{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #006da4;
+    border-color: #004d74;
+    padding: 0rem 2rem;
+}
+#search-btn:hover{
+    background-color: #006da4;
+    color: white;
+}
+
+
+#search-suggestion{
+    background-color: #004d74;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+    width: 25rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+#search-suggestion ul{
+    height: 13rem;
+    overflow-y: scroll;
+}
+#search-suggestion li{
+    width: 22rem;
+    height: 2.2rem;
+    border-bottom: 0.1rem solid lightgrey;
+    margin: 0.5rem;
+}
+#search-suggestion li:hover{
+    background-color:lightgrey;
+}
+
+
+#failed-research-alert{
+    text-align: center;
+    font-size: 1rem;
+    width: 20rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+
+#city-information{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#city-information h2{
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-bottom: 1rem;
+    color: #006da4;
+}
+#city-information h3{
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+#city-information p{
+    font-size: 1rem;
+}
+#city-information a{
+    text-decoration: none;
+    color: #006da4;
+}
+#city-information a:hover{
+    text-decoration: underline;
+}
+
+#info-or-city{
+    color: white;
+    height: auto;
+    padding: 2rem;
+    text-align: start;
+    width: 70vw;
+}
+
+#instructions-or-data{
+    background-color: #006da4;
+    color: white;
+    width: 30vw;
+    padding: 1.5rem;
+    border-radius: 0rem 0.8rem 0.8rem 0rem;  
+}
+#instructions-or-data h3{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-bottom: 1rem;
+    color: #032030;
+    padding-top: 1.7rem;
+}
+#instructions-or-data li{
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.score p{
+    font-size: 1rem;
+}
+.out-of-ten{
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    width: 15rem;
+    height: 0.6rem;
+    border: 1px solid #003554;
+    border-radius: 1rem;
+}
+.bg-lightcolor{
+    background-color: #003554;
+    border-radius: 1rem;
+    height: 0.5rem;
+}
+.lenght-0{
+    width: 0;
+}
+.lenght-1{
+    width: 1.5rem;
+}
+.lenght-2{
+    width: 3rem;
+}
+.lenght-3{
+    width: 4.5rem;
+}
+.lenght-4{
+    width: 6rem;
+}
+.lenght-5{
+    width: 7.5rem;
+}
+.lenght-6{
+    width: 9rem;
+}
+.lenght-7{
+    width: 10.5rem;
+}
+.lenght-8{
+    width: 12rem;
+}
+.lenght-9{
+    width: 13.5rem;
+}
+.lenght-10{
+    width: 15rem;
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+    #banner-name{
+        font-size: 4rem;
+        text-align: center;
+    }
+    #instructions{
+        font-size: 1.2rem;
+    }
+    #search-bar{
+        height: 2.2rem;
+        width: 15rem;
+        font-size: 0.9rem;
+    }
+    #search-btn{
+        font-size: 0.9rem;
+        padding: 0rem 1rem;
+    }
+    #info-or-city{
+        width: 65vw;
+    }
+    #instructions-or-data{
+        width: 35vw;
+        padding: 0.6rem;
+    }
+    #city-information h2{
+        font-size: 2rem;
+    }
+    #city-information h3{
+        font-size: 1.4rem;
+    }
+    #city-information p{
+        font-size: 1rem;
+    }
+    #instructions-or-data h3{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    #instructions-or-data li{
+        font-size: 0.8rem;
+    }
+
+    #failed-research-alert{
+        font-size: 1rem;
+        width: 16rem;
+        margin-top: 2rem;
+    }
+
+    #search-suggestion{
+        font-size: 0.8rem;
+        width: 25rem;
+    }
+    #search-suggestion li{
+        width: 22rem;
+        height: 2rem;
+        border-bottom: 0.1rem solid rgb(236, 236, 236);
+        margin: 0.5rem;
+    }
+
+    .out-of-ten{
+        width: 10rem;
+        height: 0.6rem;
+    }
+    .bg-lightcolor{
+        height: 0.5rem;
+    }
+    .lenght-0{
+        width: 0rem;
+    }
+    .lenght-1{
+        width: 1rem;
+    }
+    .lenght-2{
+        width: 2rem;
+    }
+    .lenght-3{
+        width: 3rem;
+    }
+    .lenght-4{
+        width: 4rem;
+    }
+    .lenght-5{
+        width: 5rem;
+    }
+    .lenght-6{
+        width: 6rem;
+    }
+    .lenght-7{
+        width: 7rem;
+    }
+    .lenght-8{
+        width: 8rem;
+    }
+    .lenght-9{
+        width: 9rem;
+    }
+    .lenght-10{
+        width: 10rem;
+    }
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 499px) {
+    #banner-name{
+        font-size: 3.8rem;
+        text-align: center;
+    }
+    #instructions{
+        font-size: 1.2rem;
+    }
+    #search-bar{
+        height: 2.2rem;
+        width: 15rem;
+        font-size: 0.9rem;
+    }
+    #search-btn{
+        font-size: 0.9rem;
+        padding: 0rem 1rem;
+    }
+    #info-or-city{
+        width: 65vw;
+    }
+    #instructions-or-data{
+        width: 35vw;
+        padding: 0.6rem;
+    }
+    #city-information h2{
+        font-size: 1.7rem;
+    }
+    #city-information h3{
+        font-size: 1.2rem;
+    }
+    #city-information p{
+        font-size: 0.8rem;
+    }
+    #instructions-or-data h3{
+        font-size: 1rem;
+        text-align: center;
+    }
+    #instructions-or-data li{
+        font-size: 0.8rem;
+    }
+
+    #failed-research-alert{
+        font-size: 1rem;
+        width: 16rem;
+        margin-top: 2rem;
+    }
+
+    #search-suggestion{
+        font-size: 0.8rem;
+        width: 25rem;
+    }
+    #search-suggestion li{
+        width: 22rem;
+        height: 2rem;
+        border-bottom: 0.1rem solid rgb(236, 236, 236);
+        margin: 0.5rem;
+    }
+
+    .out-of-ten{
+        width: 7rem;
+        height: 0.5rem;
+    }
+    .bg-lightcolor{
+        height: 0.4rem;
+    }
+    .lenght-0{
+        width: 0rem;
+    }
+    .lenght-1{
+        width: 0.7rem;
+    }
+    .lenght-2{
+        width: 1.4rem;
+    }
+    .lenght-3{
+        width: 2.1rem;
+    }
+    .lenght-4{
+        width: 2.8rem;
+    }
+    .lenght-5{
+        width: 3.5rem;
+    }
+    .lenght-6{
+        width: 4.2rem;
+    }
+    .lenght-7{
+        width: 4.9rem;
+    }
+    .lenght-8{
+        width: 5.6rem;
+    }
+    .lenght-9{
+        width: 6.3rem;
+    }
+    .lenght-10{
+        width: 7rem;
+    }
+}
+
