@@ -31,9 +31,6 @@ Or constinue rediang about the project <a href= "#the-project">here</a>
     <li>
       <a href = "#guide">Guide to use</a>
     </li>
-     <li>
-      <a href = "#contact">Contact</a>
-    </li>
   </ol>
 </details>
 
@@ -77,9 +74,8 @@ At the top of the site you will see a search bar, type the name of the city you 
 <br>
 Looking down you can see a descriptive box with the name of the city, the state you belong to and a brief description of the city. On the left of the screen you can also see a series of scores useful for evaluating the city. The result is rounded to the nearest number on a scale of 1 to 10.
 <br>
-You can get the data of today's city present in the database.
+You can get the data of city present in the database.
 
-## Contact
 
 
 
